@@ -5,6 +5,21 @@ host and TCP port.  It is useful for synchronizing the spin-up of
 interdependent services, such as linked docker containers.  Since it is a pure
 bash script, it does not have any external dependencies.
 
+## Requirement
+
+```bash
+# requirement package
+bash netcat coreutils
+
+# REHL/CentOS
+yum -y -q install bash netcat coreutils
+# Ubuntu/Debian
+apt-get update && apt-get -y install bash netcat coreutils
+# Alpine
+apk update && apk add --no-cache bash nc coreutils
+```
+
+
 ## Usage
 
 ```text
